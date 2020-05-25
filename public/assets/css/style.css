@@ -1,0 +1,374 @@
+* {
+  box-sizing: border-box !important; }
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: #f6f4fd;
+  font-family: "Roboto", sans-serif; }
+
+/* Global style */
+button.btn:focus {
+  box-shadow: none !important; }
+
+button.btn.btn-border-radius {
+  width: 150px !important;
+  color: #fff !important;
+  background-color: #eb5757 !important;
+  border-radius: 50px !important; }
+
+/* Navigation */
+@media (max-width: 992px) {
+  .nav-item a.nav-link ~ .nav-hover-border {
+    display: none !important; }
+  .nav-item button[type='button'] {
+    display: none !important; } }
+
+nav.navbar .navbar-brand #logo {
+  width: 100px !important;
+  height: 50px !important; }
+
+nav.navbar .navbar-toggler {
+  border: none !important;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px; }
+  nav.navbar .navbar-toggler .navbar-toggler-icon {
+    background-image: none !important;
+    display: table; }
+    nav.navbar .navbar-toggler .navbar-toggler-icon .fa-bars {
+      color: #000;
+      display: table-cell;
+      vertical-align: middle; }
+  nav.navbar .navbar-toggler:hover {
+    background: #eb5757;
+    transition: all 200ms !important; }
+    nav.navbar .navbar-toggler:hover .fa-bars {
+      color: #fff; }
+
+nav.navbar ul.navbar-nav li.nav-item a.nav-link {
+  margin-right: 30px;
+  color: #000 !important;
+  text-transform: uppercase; }
+  nav.navbar ul.navbar-nav li.nav-item a.nav-link:hover {
+    color: #eb5757 !important; }
+  nav.navbar ul.navbar-nav li.nav-item a.nav-link ~ .nav-hover-border {
+    width: 3px;
+    margin-right: 20px;
+    height: 3px;
+    transition: width 200ms !important; }
+  nav.navbar ul.navbar-nav li.nav-item a.nav-link:hover ~ .nav-hover-border {
+    width: 80%;
+    background-color: #eb5757; }
+
+/* Home Section */
+@media (max-width: 578px) {
+  .kyuni-cover #kyuni-home #kyuni-banner .intro-text #round-circle {
+    height: 200px !important;
+    width: 200px !important;
+    border-radius: 100px !important; }
+    .kyuni-cover #kyuni-home #kyuni-banner .intro-text #round-circle #text {
+      font-size: 40px !important; } }
+
+@media (max-width: 768px) {
+  .kyuni-cover #kyuni-home #kyuni-banner .intro-text #round-circle {
+    height: 400px !important;
+    width: 400px !important;
+    border-radius: 200px !important; }
+    .kyuni-cover #kyuni-home #kyuni-banner .intro-text #round-circle #text {
+      font-size: 60px !important; } }
+
+@media (max-width: 992px) {
+  .kyuni-cover #kyuni-home #kyuni-banner {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important; }
+    .kyuni-cover #kyuni-home #kyuni-banner .banner-img {
+      display: none !important; }
+    .kyuni-cover #kyuni-home #kyuni-banner .intro-text {
+      height: inherit;
+      text-align: center;
+      align-items: center !important;
+      justify-content: space-around; }
+      .kyuni-cover #kyuni-home #kyuni-banner .intro-text #round-circle {
+        height: 500px;
+        width: 500px;
+        background-color: #eb5757;
+        border-radius: 250px;
+        display: table; }
+        .kyuni-cover #kyuni-home #kyuni-banner .intro-text #round-circle #text {
+          display: table-cell;
+          vertical-align: middle !important; }
+      .kyuni-cover #kyuni-home #kyuni-banner .intro-text #arrow-down {
+        align-self: center !important; } }
+
+.kyuni-cover {
+  width: 100% !important;
+  height: 100vh !important; }
+  .kyuni-cover #kyuni-home {
+    height: 84%; }
+    .kyuni-cover #kyuni-home #kyuni-banner {
+      height: 100%;
+      display: grid;
+      margin-top: 80px;
+      grid-gap: 20px;
+      grid-template-columns: repeat(2, 1fr); }
+      .kyuni-cover #kyuni-home #kyuni-banner .intro-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around; }
+        .kyuni-cover #kyuni-home #kyuni-banner .intro-text #text {
+          margin-bottom: 0;
+          font-family: "Abril Fatface", cursive;
+          font-size: 100px; }
+        .kyuni-cover #kyuni-home #kyuni-banner .intro-text #arrow-down {
+          align-self: end;
+          font-size: 40px;
+          color: #eb5757; }
+      .kyuni-cover #kyuni-home #kyuni-banner .banner-img {
+        background-image: url("../imgs/home-mic.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: inherit;
+        width: 100%; }
+
+@media (max-width: 992px) {
+  .about-section .contact {
+    display: none !important; }
+  .about-section .about-us #about-text-col {
+    display: block !important;
+    font-family: "Abril Fatface", cursive; }
+    .about-section .about-us #about-text-col::after {
+      display: table;
+      content: "";
+      width: 150px;
+      height: 5px;
+      background-color: #eb5757; } }
+
+main .kyuni-about .cover-viewport {
+  width: 100%;
+  height: 100%; }
+  main .kyuni-about .cover-viewport .about-section {
+    display: flex;
+    justify-content: center;
+    height: auto !important; }
+    main .kyuni-about .cover-viewport .about-section .contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #fff !important;
+      width: 50%; }
+      main .kyuni-about .cover-viewport .about-section .contact h2 {
+        margin-bottom: 5rem !important;
+        font-family: "Abril Fatface", cursive;
+        border-bottom: 2px solid #eb5757 !important; }
+      main .kyuni-about .cover-viewport .about-section .contact button.btn {
+        padding: 10px;
+        width: 200px !important; }
+    main .kyuni-about .cover-viewport .about-section .about-us {
+      width: 100%;
+      color: #fff;
+      background: #000 !important;
+      background: firebrick;
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly; }
+      main .kyuni-about .cover-viewport .about-section .about-us #about-text-col {
+        display: none; }
+      main .kyuni-about .cover-viewport .about-section .about-us span {
+        font-family: "Abril Fatface", cursive;
+        font-size: 1.15rem;
+        display: block;
+        text-align: end; }
+      main .kyuni-about .cover-viewport .about-section .about-us p {
+        font-size: 1.30rem !important; }
+      main .kyuni-about .cover-viewport .about-section .about-us .kyuni-col {
+        height: 100px;
+        display: flex;
+        background-image: url("../imgs/studio-mic.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-x: 104%; }
+        main .kyuni-about .cover-viewport .about-section .about-us .kyuni-col span {
+          font-family: "Abril Fatface", cursive;
+          font-size: 1.0rem !important;
+          align-self: center; }
+
+/* Work Section */
+@media (max-width: 992px) {
+  #kyuni-work .work-intro h3 {
+    font-size: 2rem; }
+  #kyuni-work .work {
+    grid-template-columns: repeat(2, 1fr) !important; } }
+
+@media (max-width: 768px) {
+  #kyuni-work {
+    height: auto !important;
+    display: initial; }
+    #kyuni-work .work-intro {
+      flex-direction: column !important; }
+      #kyuni-work .work-intro h3, #kyuni-work .work-intro span {
+        width: 100% !important; }
+      #kyuni-work .work-intro h3 {
+        font-size: 1.50rem;
+        margin-bottom: 10px !important; }
+    #kyuni-work .work {
+      grid-template-columns: repeat(1, 1fr) !important; } }
+
+.kyuni-work {
+  height: 100vh !important;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  padding: 0.875rem !important; }
+  .kyuni-work .work-intro {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    padding: 0.875rem !important; }
+    .kyuni-work .work-intro h3 {
+      font-size: 3.85rem;
+      font-family: "Abril Fatface", cursive;
+      self-align: center;
+      align-self: center;
+      margin-bottom: 0 !important; }
+    .kyuni-work .work-intro span {
+      align-self: center;
+      text-align: right;
+      color: #eb5757; }
+    .kyuni-work .work-intro h3, .kyuni-work .work-intro span {
+      width: 50%; }
+  .kyuni-work .work {
+    width: 100%;
+    padding: 0.875rem;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr); }
+    .kyuni-work .work .audio-player {
+      background: #fff !important;
+      padding: 20px;
+      border-radius: 10px; }
+      .kyuni-work .work .audio-player #player-voiceover-name {
+        text-align: center;
+        margin-bottom: 0 !important; }
+    .kyuni-work .work .player-control {
+      display: flex;
+      position: relative; }
+      .kyuni-work .work .player-control #play-btn {
+        width: 10%;
+        height: 40px;
+        margin-right: 10px;
+        border-radius: 50%;
+        background: url("../imgs/play-circle-regular.svg") no-repeat center !important;
+        cursor: pointer; }
+      .kyuni-work .work .player-control .seek {
+        align-self: center;
+        width: 90% !important; }
+        .kyuni-work .work .player-control .seek #seek-obj-container {
+          margin-top: 10px !important; }
+        .kyuni-work .work .player-control .seek progress[value] {
+          width: 100% !important;
+          height: 15px;
+          cursor: pointer;
+          background-color: #dddfeb;
+          border: none !important;
+          border-radius: 5px; }
+          .kyuni-work .work .player-control .seek progress[value]::-moz-progress-bar, .kyuni-work .work .player-control .seek progress[value]::-webkit-progress-bar {
+            appearance: none !important;
+            -webkit-appearance: none !important;
+            -moz-appearance: none !important;
+            background-color: #eb5757 !important;
+            border: none !important;
+            border-radius: 5px; }
+          .kyuni-work .work .player-control .seek progress[value]::-moz-progress-value, .kyuni-work .work .player-control .seek progress[value]::-webkit-progress-value {
+            border-radius: 5px;
+            background-color: #eb5757 !important; }
+  .kyuni-work #contact {
+    width: 100%;
+    text-align: center;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .kyuni-work #contact button.btn {
+      width: 300px !important;
+      padding: 10px !important; }
+
+@media (max-width: 992px) {
+  footer .contact #contact-intro-text {
+    font-size: 40px !important; } }
+
+@media (max-width: 768px) {
+  footer .contact #contact-intro-text {
+    font-size: 35px !important; } }
+
+footer {
+  background: #000;
+  color: #fff;
+  min-height: 350px !important;
+  margin-top: 20px; }
+  footer .container-fluid {
+    padding-top: 100px; }
+    footer .container-fluid .copy-right h1, footer .container-fluid .copy-right h2 {
+      margin: 0; }
+    footer .container-fluid .copy-right img {
+      width: 250px !important;
+      height: 150px !important; }
+    footer .container-fluid .copy-right h2 {
+      font-family: "Abril Fatface", cursive;
+      margin: 30px 0 30px 0 !important; }
+    footer .container-fluid .contact #contact-intro-text {
+      margin-bottom: 30px !important;
+      font-family: "Abril Fatface", cursive;
+      font-size: 55px;
+      text-align: center; }
+    footer .container-fluid .contact #mail a {
+      color: #fff; }
+    footer .container-fluid .contact #social-media i {
+      font-size: 30px; }
+      footer .container-fluid .contact #social-media i.fa-instagram {
+        margin: 0 20px 0 20px; }
+
+.modal .modal-content {
+  padding: 10px !important; }
+
+.modal .modal-header {
+  align-items: center !important;
+  border-bottom: none !important; }
+  .modal .modal-header .modal-title {
+    font-family: "Abril Fatface", cursive !important;
+    font-size: 2.50rem !important; }
+  .modal .modal-header button {
+    font-size: 2.50rem !important;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .modal .modal-header button.close {
+      color: #c51717;
+      box-shadow: none !important; }
+    .modal .modal-header button:hover {
+      background: #eb5757;
+      transition: all 200ms !important; }
+
+.modal .modal-body form .form-control {
+  box-shadow: none !important;
+  background-color: #f6f4fd !important;
+  border-radius: 0.35rem; }
+  .modal .modal-body form .form-control:focus {
+    border: 1px solid #eb5757;
+    transition: all 200ms !important; }
+
+.modal .modal-body form .form-group textarea {
+  height: 204px !important; }
+
+.modal .modal-body form .form-group #send-btn {
+  width: 100% !important;
+  height: 50px;
+  font-size: 1.70rem; }
